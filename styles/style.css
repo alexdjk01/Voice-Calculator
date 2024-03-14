@@ -1,0 +1,158 @@
+
+/*
+pozitii: 
+    relative - 
+
+display:
+    inline - e default nu poti sa i dai padding is margin 
+            Displays an element as an inline element (like <span>). Any height and width properties will have no effect
+    inline-block - aici poti sa ii dai margin si padding si se aranjeaza in functie de div u in care e
+            Displays an element as an inline-level block container. The element itself is formatted as an inline element, but you can apply height and width values
+
+    block - Displays an element as a block element (like <p>). It starts on a new line, and takes up the whole width
+
+*/
+
+body{
+    background-color: white;
+}
+
+#containerTitle{
+    text-align: center;
+    width: 500px;
+    height: 60px;
+    position: relative;
+    background-color: rgba(149,78,4,1);
+    margin: 20px auto;	
+    border-radius: 10px;
+    box-shadow: 5px 10px 10px 0 rgba(0, 0, 0, 0.35), 0 5px 18px 0 rgba(0, 0, 0, 0.35);
+}
+
+.title{
+    margin: auto;
+    
+}
+
+.title p{
+   
+    margin:0 ;
+    padding-top: 5px;
+    font-size: 40px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:orange; 
+    font-style: italic;
+}
+
+#containerCalculator{
+	width: 1000px;
+	height: 720px;
+	margin: 20px auto;	
+    border-radius: 500px;
+    position: relative;
+    overflow: hidden;
+    border: 1px black;
+    box-shadow: 5px 10px 10px 0 rgba(0, 0, 0, 0.35), 0 5px 18px 0 rgba(0, 0, 0, 0.35);
+}
+
+canvas{
+   display: block;
+   background-color: orange;
+   position: relative;
+}
+
+
+.calculator{
+    background-color: white ;
+    margin: auto;
+    position: absolute;
+    top:40px;
+    left:300px;
+    height: 630px;
+    width: 390px;
+    border-radius: 10px;
+    box-shadow: 5px 7px 10px 0 rgba(0, 0, 0, 0.35), 0 5px 18px 0 rgba(0, 0, 0, 0.35);
+}
+
+.result{
+    background-color:lavender;
+    width: 390px;
+    height: 130px;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    
+}
+
+#output{
+    display: inline-block;    
+    width: 320px;
+    height: 130px;
+    border-radius: 10px 0 0 0;
+    color: black;
+}
+
+#history
+{
+    width: 280px;
+    height: 30px;
+    font-size: 15px;
+    text-align: right;
+}
+
+#current{
+    margin-top: 30px;
+    width: 290px;
+    height: 60px;
+    font-size: 50px;
+    text-align: right;
+}
+
+#microphone-tap
+{
+    width: 50px;
+    height: 60px;
+    position: absolute;
+    padding: 5px;
+    margin-top: 30px;
+    margin-left: 7px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.keyboard{
+    background-color: white ;
+    width: 100%;
+    height:500px;
+    border-radius: 0px 0px 10px 10px;
+    padding-top: 7px;
+}
+
+button{
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    float: left;
+    margin: 13px;
+    border-width: 0;
+    font-size: 20px;
+    
+}
+
+.calculate{
+    background-color: orange;
+}
+.action{
+    background-color: lightgray;
+}
+.digit{
+    background-color: grey;
+}
+#zero{
+    width: 166px;
+}
+.blank{
+    background-color: whitesmoke;
+}
+#backspace {
+    background-color: green;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link type="text/css" rel="stylesheet" href="styles/style.css" />
+    <script type="text/javascript" src="scripts/script.js"></script>
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <title>Calculator</title>
+    
+   <div class= "container" id="containerTitle">
+        <div class="title">
+            <p>Voice Calculator</p>
+        </div>
+   </div>
+
+    <div class= "container" id="containerCalculator">
+    <!-- Here we'll create a canvas in order to make the 'rain number' design-->
+    
+    <canvas id="rain_numbers" width="1000" height="720">
+
+    </canvas>
+
+    <!-- Calculator is divided by 2 other divs (the result part) and the (keyboard part) --> 
+     <div class="calculator">
+            <div class="result">
+                <div id="output">
+
+                    <div id="history">
+
+                    </div>
+                    <div id="current">
+
+                    </div>
+
+                </div>
+
+                <span id="microphone-tap">
+                    <svg xmlns="resources/mic.svg" fill="currentColor"  viewBox="0 0 20 20">
+                        <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"/>
+                        <path d="M10 8a2 2 0 1 1-4 0V3a2 2 0 1 1 4 0v5zM8 0a3 3 0 0 0-3 3v5a3 3 0 0 0 6 0V3a3 3 0 0 0-3-3z"/>
+                    </svg>
+                    
+                </span>
+            </div>
+            <i class="bi bi-activity"></i>
+
+            <div class="keyboard">  <!--Create the keyboard for the calculator with all the buttons -->
+                <button class="action" id="clear">AC</button> <!--clear Current + History -->
+                <button class="action" id="backspace">&#8592;</button>
+                <button class="calculate" id="%">%</button>
+                <button class="calculate" id="/">&#247;</button>
+                <button class="digit"  id="7">7</button>
+                <button class="digit"  id="8">8</button>
+                <button class="digit"  id="9">9</button>
+                <button class="calculate" id="*">&times;</button>
+                <button class="digit"  id="4">4</button>
+                <button class="digit"  id="5">5</button>
+                <button class="digit"  id="6">6</button>
+                <button class="calculate" id="-">-</button>
+                <button class="digit"  id="1">1</button>
+                <button class="digit"  id="2">2</button>
+                <button class="digit"  id="3">3</button>
+                <button class="calculate" id="+">+</button>
+                <button class="digit"  id="zero">0</button>
+                <button class="digit"  id=".">,</button>
+                <button class="calculate" id="=">=</button>
+            </div>
+
+        </div>
+    </div>
+
+ 
+
+    
+    <script src="./scripts/script.js"></script>
+</body>
+
+
+</html>
